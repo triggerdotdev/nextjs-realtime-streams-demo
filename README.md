@@ -20,6 +20,8 @@ Open [http://localhost:3000/weather](http://localhost:3000/weather) with your br
 
 ## Realtime + ai SDK + streams
 
+https://github.com/user-attachments/assets/f28ac0be-838b-4fad-b97d-ca24692eacf5
+
 - View the Trigger.dev task code in the [src/trigger/ai.ts](src/trigger/ai.ts) file.
 - View the frontend code in the [src/app/weather/page.tsx](src/app/weather/page.tsx) file and the [src/components/GetStreamingWeatherButton.tsx](src/components/GetStreamingWeatherButton.tsx) file.
 
