@@ -1,4 +1,4 @@
-import TriggerButtonWithStreaming from "@/components/TriggerButtonWithStreaming";
+import GetStreamingWeatherButton from "@/components/GetStreamingWeatherButton";
 import { auth } from "@trigger.dev/sdk/v3";
 
 export default async function WeatherPage() {
@@ -13,7 +13,7 @@ export default async function WeatherPage() {
   return (
     <main className="grid grid-rows-[1fr_auto] min-h-screen items-center justify-center w-full bg-gray-900">
       <div className="flex flex-col space-y-8">
-        <TriggerButtonWithStreaming accessToken={publicAccessToken} />
+        <GetStreamingWeatherButton accessToken={publicAccessToken} />
       </div>
     </main>
   );

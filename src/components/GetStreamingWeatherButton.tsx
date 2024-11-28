@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import type { STREAMS, openaiStreaming } from "@/trigger/ai";
+import type { STREAMS, aiWeather } from "@/trigger/ai";
 import { useRealtimeTaskTriggerWithStreams } from "@trigger.dev/react-hooks";
 import { useCallback, useState } from "react";
 import {
@@ -14,7 +14,7 @@ import {
 } from "./ui/dialog";
 import { Card, CardContent, CardFooter } from "./ui/card";
 
-export default function TriggerButton({
+export default function GetStreamingWeather({
   accessToken,
 }: {
   accessToken: string;
@@ -22,9 +22,9 @@ export default function TriggerButton({
   const [isOpen, setIsOpen] = useState(false);
 
   const { submit, isLoading, run, streams } = useRealtimeTaskTriggerWithStreams<
-    typeof openaiStreaming,
+    typeof aiWeather,
     STREAMS
-  >("openai-streaming", {
+  >("ai-weather", {
     accessToken,
     baseURL: process.env.NEXT_PUBLIC_TRIGGER_API_URL,
     experimental_throttleInMs: 100,

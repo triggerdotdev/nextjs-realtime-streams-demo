@@ -1,7 +1,7 @@
 import RunButton from "@/components/RunButton";
 import BatchRunButton from "@/components/BatchRunButton";
 import TriggerButton from "@/components/TriggerButton";
-import TriggerButtonWithStreaming from "@/components/TriggerButtonWithStreaming";
+import GetStreamingWeatherButton from "@/components/GetStreamingWeatherButton";
 import { ImageUploadDropzone } from "@/components/ImageUploadButton";
 import { auth } from "@trigger.dev/sdk/v3";
 
@@ -36,7 +36,7 @@ export default async function Home() {
         <RunButton />
         <BatchRunButton />
         <TriggerButton accessToken={publicAccessToken} />
-        <TriggerButtonWithStreaming accessToken={publicAccessToken} />
+        <GetStreamingWeatherButton accessToken={publicAccessToken} />
       </div>
     </main>
   );

@@ -1,4 +1,4 @@
-## Trigger.dev Realtime Demo
+## Trigger.dev Realtime streams Demo
 
 This demo shows off a variety of features of [Trigger.dev Realtime](https://trigger.dev/docs/realtime)
 
@@ -16,7 +16,23 @@ npm run dev
 npm run dev:trigger # Run this in a separate terminal
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000/weather](http://localhost:3000/weather) with your browser to see the result.
+
+## Realtime + ai SDK + streams
+
+<video
+  src="https://content.trigger.dev/realtime-streams-demo.mp4"
+  preload="auto"
+  controls={true}
+  loop
+  muted
+  autoPlay={true}
+  width="100%"
+  height="100%"
+/>
+
+- View the Trigger.dev task code in the [src/trigger/ai.ts](src/trigger/ai.ts) file.
+- View the frontend code in the [src/app/weather/page.tsx](src/app/weather/page.tsx) file and the [src/components/GetStreamingWeatherButton.tsx](src/components/GetStreamingWeatherButton.tsx) file.
 
 ## Learn More
 
